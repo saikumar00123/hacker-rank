@@ -1,0 +1,26 @@
+def char_count_dict(s):
+    d = {}
+    for c in s:
+        d[c] = 1 if c not in d else d[c] + 1
+    return d
+
+if __name__ == '__main__':
+    s = input()
+    char_counts = char_count_dict(s)
+    sorted_dict = dict(sorted(char_counts.items()))
+    reverse_dict = {}
+    for k,v in sorted_dict.items():
+        if v not in reverse_dict: reverse_dict[v] = []
+        reverse_dict[v].append(k)
+    reverse_sorted_dict = dict(sorted(reverse_dict.items(), reverse=True))
+    line_count = 0
+    break_outer = False
+    for v,k in reverse_sorted_dict.items():
+        for i, ki in enumerate(reverse_sorted_dict[v]):
+            print(str(reverse_sorted_dict[v][i]) + " " + str(v))
+            line_count += 1
+            if line_count == 3: 
+                break_outer = True
+                break
+        if break_outer:
+            break
