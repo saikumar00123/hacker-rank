@@ -14,3 +14,69 @@ import sys
 
 if __name__ == '__main__':
     n = int(input().strip())
+3)https://www.hackerrank.com/challenges/python-arithmetic-operators/problem?isFullScreen=true
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+4)https://www.hackerrank.com/challenges/python-division/problem?isFullScreen=true
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+5)https://www.hackerrank.com/challenges/python-loops/problem?isFullScreen=true
+if __name__ == '__main__':
+    n = int(input())
+6)https://www.hackerrank.com/challenges/write-a-function/problem?isFullScreen=true
+def is_leap(year):
+    leap = False
+    
+    # Write your logic here
+    
+    return leap
+
+year = int(input())
+print(is_leap(year))
+7)https://www.hackerrank.com/challenges/python-print/problem?isFullScreen=true
+if __name__ == '__main__':
+    n = int(input())
+8)https://www.hackerrank.com/challenges/list-comprehensions/problem?isFullScreen=true
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+9)https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem?isFullScreen=true
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+10)https://www.hackerrank.com/challenges/nested-list/problem?isFullScreen=true
+if __name__ == '__main__':
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+11)https://www.hackerrank.com/challenges/finding-the-percentage/problem?isFullScreen=true
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+12)https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true
+if __name__ == '__main__':
+    N = int(input())
+13)https://www.hackerrank.com/challenges/python-string-split-and-join/problem?isFullScreen=true
+
+
+def split_and_join(line):
+    # write your code here
+
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
+14)https://www.hackerrank.com/challenges/string-validators/problem?isFullScreen=true
+if __name__ == '__main__':
+    s = input()
+15)https://www.hackerrank.com/challenges/text-alignment/problem?isFullScreen=true
+# Enter yourhttps://www.hackerrank.com/challenges/text-alignment/problem?isFullScreen=true code here. Read input from STDIN. Print output to STDOUT
