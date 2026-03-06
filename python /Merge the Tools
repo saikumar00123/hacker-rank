@@ -1,0 +1,17 @@
+def merge_the_tools(string, k):
+    # youdef merge_the_tools(string, k):
+    # Iterate through the string in chunks of size k
+    for i in range(0, len(string), k):
+        # Slice the substring
+        substring = string[i : i + k]
+        
+        # Remove duplicates while maintaining order
+        # dict.fromkeys() is O(n) and preserves order in Python 3.7+
+        unique_chars = dict.fromkeys(substring)
+        
+        # Join the keys back into a string and print
+        print("".join(unique_chars))
+
+# Example usage:
+# merge_the_tools('AABCAAADA', 3)r code goes here
+
